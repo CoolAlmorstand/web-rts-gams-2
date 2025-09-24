@@ -1,0 +1,1734 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<map version="1.2" orientation="orthogonal" renderorder="right-down" width="320" height="300" tilewidth="20" tileheight="20" nextobjectid="1">
+  <properties>
+    <property name="sw1" value="546" />
+    <property name="sw2" value="429" />
+    <property name="sw6" value="418" />
+    <property name="sw5" value="640" />
+    <property name="sw3" value="504" />
+    <property name="sw4" value="334" />
+    <property name="tag" value="RW" />
+  </properties>
+  <tileset source="units.tsx" firstgid="1" />
+  <tileset source="misc.tsx" firstgid="280" />
+  <tileset firstgid="298" name="decoration" columns="7" tilecount="35" tileheight="20" tilewidth="20">
+    <image source="bitmaps/decoration.png" width="140" height="100" trans="" />
+    <tile id="21">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="22">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="28">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="29">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="333" name="Deep Water" columns="1" tilecount="1" tileheight="20" tilewidth="20">
+    <image source="bitmaps/deepwater.png" width="20" height="20" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="terrain/Dirt.tsx" firstgid="334" />
+  <tileset source="terrain/Dirt_Details.tsx" firstgid="344" />
+  <tileset source="terrain/Ice.tsx" firstgid="404" />
+  <tileset firstgid="414" name="Lava" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/lava.png" width="60" height="100" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="lava" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="lava" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="lava" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="terrain/Long Grass.tsx" firstgid="429" />
+  <tileset firstgid="469" name="Mountain" columns="7" tilecount="35" tileheight="20" tilewidth="20">
+    <image source="bitmaps/mountain.png" width="140" height="100" trans="008a76" />
+    <tile id="21">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="22">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="28">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="29">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="504" name="Sand" columns="7" tilecount="42" tileheight="20" tilewidth="20">
+    <image source="bitmaps/sand.png" width="140" height="120" trans="008a76" />
+    <tile id="28">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="35">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="36">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="38">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="40">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="546" name="Shallow Water" columns="3" tilecount="6" tileheight="20" tilewidth="20">
+    <image source="bitmaps/shallowwater.png" width="60" height="40" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="terrain/Short Grass.tsx" firstgid="552" />
+  <tileset firstgid="553" name="Snow" columns="8" tilecount="80" tileheight="20" tilewidth="20">
+    <image source="bitmaps/snow.png" width="160" height="200" trans="008a76" />
+    <tile id="11">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="32">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="33">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="40">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="41">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+    <tile id="43">
+      <properties>
+        <property name="large-rock" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="633" name="Stone" columns="6" tilecount="36" tileheight="20" tilewidth="20">
+    <image source="bitmaps/stone.png" width="120" height="120" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="24">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="25">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="26">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="terrain/Water.tsx" firstgid="669" />
+  <tileset firstgid="670" name="Dirt Dirt - Ridge" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/dirt2dirt_ridge.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="691" name="Dirt ShalowWater - Ridge" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/dirt2shallowwater_ridge.png" width="60" height="140" trans="008a76" />
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="15">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="17">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Ice Ice - Flat.tsx" firstgid="712" />
+  <tileset source="ridges/Ice ShallowWater - Broken.tsx" firstgid="733" />
+  <tileset source="ridges/Ice ShallowWater - Ridge.tsx" firstgid="754" />
+  <tileset source="ridges/LongGrass Dirt - Flat.tsx" firstgid="775" />
+  <tileset firstgid="796" name="LongGrass Dirt - Ridge" columns="3" tilecount="30" tileheight="20" tilewidth="20">
+    <image source="bitmaps/longgrass2dirt_ridge.png" width="60" height="200" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6" />
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/LongGrass LongGrass - Hill.tsx" firstgid="826" />
+  <tileset source="ridges/LongGrass LongGrass - Ridge.tsx" firstgid="847" />
+  <tileset firstgid="877" name="LongGrass ShallowWater - Flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/longgrass2shallowwater_flat.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="15">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="17">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="898" name="LongGrass ShallowWater - Ridge" columns="3" tilecount="30" tileheight="20" tilewidth="20">
+    <image source="bitmaps/longgrass2shallowwater_ridge.png" width="60" height="200" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="21">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="23">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="24">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="26">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="27">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="28">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="29">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="15">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="17">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="22">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="25">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/LongGrass ShortGrass - Flat.tsx" firstgid="928" />
+  <tileset source="ridges/Mountain Dirt - Flat.tsx" firstgid="949" />
+  <tileset firstgid="970" name="Mountain Dirt - Ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/mountain2dirt_ridge.png" width="60" height="100" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Mountain LongGrass - Flat.tsx" firstgid="985" />
+  <tileset source="ridges/Mountain Mountain - Hill.tsx" firstgid="1006" />
+  <tileset firstgid="1027" name="Mountain Mountain - Ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/mountain2mountain_ridge.png" width="60" height="100" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Mountain Nothing - Flat.tsx" firstgid="1042" />
+  <tileset source="ridges/Mountain Nothing - Ridge.tsx" firstgid="1063" />
+  <tileset source="ridges/Mountain Sand - Flat.tsx" firstgid="1078" />
+  <tileset source="ridges/Mountain Sand - Ridge.tsx" firstgid="1099" />
+  <tileset firstgid="1114" name="LongGrass ShallowWater - Flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/mountain2shallowwater_flat.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="1135" name="Mountain ShallowWater - Ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/mountain2shallowwater_ridge.png" width="60" height="100" trans="008a76" />
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Mountain Snow - Flat.tsx" firstgid="1150" />
+  <tileset source="ridges/Mountain Stone - Flat.tsx" firstgid="1171" />
+  <tileset source="ridges/Mountain Stone - Ridge.tsx" firstgid="1192" />
+  <tileset source="ridges/Nothing Sand - Flat.tsx" firstgid="1207" />
+  <tileset source="ridges/Sand Dirt - Flat.tsx" firstgid="1228" />
+  <tileset firstgid="1249" name="Sand Dirt - Ridge" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/sand2dirt_ridge.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Sand LandGrass - Flat.tsx" firstgid="1270" />
+  <tileset source="ridges/Sand Nothing - Flat.tsx" firstgid="1291" />
+  <tileset source="ridges/Sand Sand - Hill.tsx" firstgid="1312" />
+  <tileset source="ridges/Sand Sand - Ridge.tsx" firstgid="1333" />
+  <tileset firstgid="1354" name="Sand ShallowWater - Flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/sand2shallowwater_flat.png" width="60" height="140" trans="008a76" />
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="15">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="17">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="0">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="cliff-soft" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="1375" name="Sand ShallowWater - Ridge" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/sand2shallowwater_ridge.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="15">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="16">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="17">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="19">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="1396" name="ShallowWater Water - Flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/shallowwater2water_flat.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Snow Dirt - Flat.tsx" firstgid="1417" />
+  <tileset source="ridges/Snow Dirt - Ridge.tsx" firstgid="1438" />
+  <tileset source="ridges/Snow Ice - Ridge.tsx" firstgid="1459" />
+  <tileset source="ridges/Snow Snow - Hill.tsx" firstgid="1480" />
+  <tileset source="ridges/Snow Snow - ridge.tsx" firstgid="1501" />
+  <tileset firstgid="1522" name="Stone Lava - Ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/stone2lava.png" width="60" height="100" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="lava-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="4">
+      <properties>
+        <property name="lava" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Stone Sand - Flat.tsx" firstgid="1537" />
+  <tileset firstgid="1558" name="Stone ShallowWater - Ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/stone2shallowwater_ridge.png" width="60" height="100" trans="008a76" />
+    <tile id="4">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="9">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset source="ridges/Stone Snow - ridge.tsx" firstgid="1573" />
+  <tileset source="ridges/Stone Stone - Ridge.tsx" firstgid="1594" />
+  <tileset firstgid="1609" name="Water DeepWater - Flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/water2deepwater_flat.png" width="60" height="140" trans="008a76" />
+    <tile id="0">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="12">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="18">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+    <tile id="20">
+      <properties>
+        <property name="water" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="1630" name="stone2longgrass_ridge" columns="3" tilecount="15" tileheight="20" tilewidth="20">
+    <image source="bitmaps/stone2longgrass_ridge.png" width="60" height="100" />
+    <tile id="0">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="1">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="2">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="3">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="5">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="6">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="7">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="8">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="10">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="11">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="13">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+    <tile id="14">
+      <properties>
+        <property name="large-cliff" value="" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="1645" name="snow2longgrass_flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="bitmaps/snow2longgrass_flat.png" width="60" height="140" />
+  </tileset>
+  <tileset firstgid="1666" name="longgrass2stone_flat" columns="3" tilecount="21" tileheight="20" tilewidth="20">
+    <image source="../rusted_warfare/assets/tilesets/bitmaps/longgrass2stone_flat.png" width="60" height="140" />
+  </tileset>
+  <layer name="Ground" width="320" height="300">
+    <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO2dW7LcupFFbQ3Ff55lT8RD0Pz06bjRrlCJlyDxSGDvBNbHinbrnlMFJnauAkiU9J8f//jHfwAAAAAAAP7Hr3/+Rj0WAIBVfLz383/gQAA4hW/34T+ANj59ox4HtHN1H/4DaAP/5eS6783gv+/7lM7jBIB1tHqh5L6fxm65u0/pOtbrmNXjAF8y5Nj5+lqeX3yP5c59d25xmJ8WX7uM22EM4M+vQo4zc83+rOu780LpfWq89+ZEZS1rfa1ez5bmRJ1J8ORuT6MeU+91vPXqDP/VvM+o+1R9nG3cGe+pQvscR79e9vNntX2q9N+oQ1T+ixr37LG/7dHVGYWY+Z0xl5n917JGib5PtdJ/Wd23Yvyr1/2wllX3sbLtf1v3Z3f3Be/+W8v7z/afal4y+K/mngf+y83K+7lPfeaWoah7UyXfjLx/tP92qO2KZ09ONYR586zqCXUtnmqy2oEt+62M/ptRU9X8O2UX+ub79Ll82rsqHFi75xodb+v+dzQfs9Z+0f6bUTvwxNl/s5/LrHReS9/W+C9y3HfPa97oqfXMWkb3wor3Aw9cP8tmuVnlvJo1hMvYet1dytUu7sN/sIo3//Xm0M0v6rVotANXXgdrP9iZX1+5u1snte7LMjnGnaf98coxROYM/4ETJbfd5XX02SrkIvKeDf6DTJTyOvpsFXKgcF/0+wL08LbHetoP47/czPBPaybw3364PgN+Gm9tr2R8vgDl+ZyRe+UYQMuscyarxtyaXRyYj1neYe13NlcfZPl8G/EY/svFzEyy9jub0nPU68+0njNRjb02x+qeBg/ncO75bJ7OkZT2i0456N0Hq/sa9M5h7wu9/lCP+zP2U/33rx/6MawgMmvX/Qt7Xxh5jqAc8+n3/07xX0TernnpyQ/u25MRh6jGO+qv3fz31//e3Yc9954jn/fjvz0Z8V8pEzPPKkRlWd3Po3x8d4L77nJ33cfOPOup3u/APEYycpeJuz2Gepylsat7eZSTvFeawxHP1dYP9+3J6Gfk1W+lZ8UjHpx1Xhn/Qe3aGf/tSdResuZzuOTBmrOGM7K/i/9wYH/tan6Ove+ezHRLTZ5m37OpGYe6B1f2MfTVDPftyS7938NO147/2uvV6j8cuBc79X8Pu10/DqyvU2ut/vUj/lke4D8lu10/9wHn1Oj7d/DfHuzW+63sev2fXsWF5fpE/DwezMXIdx53ZOfrvzoQD7bXoebn2Q/78vQsVfXM14mTrv9kB/Z+DvQ8G8GHHtT47aT+pwZn+u/qvFoHjtYK/3m7D37nVD2GVZzmv5LrntaCUetk1oBa/6mzl4XTanWKA2s8dnePNLI++A/3ZeCkmtX2d/bnJw7jxX8a/z39vQMn9XpLTk+pS8uaqOW/OeEyRvbAOgeW5uCUPh/J684+fHJDy7MBZxc6jQn/afz39HesqDORgRMcGOExx32ywxg+4D8vdu3pmfmlZvWoHah+/yv4zwv6uS/D1Kwe5VrQyX1/gf/8mN3Lbp/BUTnGgd45cM0dDvRiZh/v/G/x4L8+VuTAOW88B/ZjRi/3ftcoC/ivj9k5yJAz/OfFjP3c25mx2eftV2QYB8ZlI+p1s2SIdaAXLr2cJb/fGVaPIyMR85z1s/MDDvTBqZfdsvz07zE51S0TI3Oc1Xd34EAfXHrZKdvXmtzVx6VumRj5e/ic8hEBDvTBoZedMl5bC4e6ZeI6v6v+Lj5XcKAPDn3skPPWOuDAsfmt+fsY1OOeCf7zwKGHHbLeUweH2rnT83cuOORhNqwBPXDpYXXme+vgUj9Xnua1Z124E/hPj1P/Ku8F4r/187nzmflaIh3Iv8HUViPXe1iK89IjdXCsoZod/j7BFUT7b8br7kLN+Q5nZvbLyGdBtjqumif1ONyJXKvd9bbaN26s7NMVa8vIHsN/sfOC/56J3qdeM4j/NP67fl9iVa+N9tuI+/Df3+dEPQZXZt2fu6798N99jWb3qmp/PdJz3PuLnQf8V2aWl6739NWucWW2A5X3F3v6bnTfi//G5+AkcJMHM/r26fnKqufOd/1Xes/RceC+uvrDb67+Y72mdWBkD5f8svrvEfj04PX9I/2L+8p1hzL4z4uZ/qv5+RkedD8vuCv47x3850Wkf3pfa9ZenHvxa6HW7+A6TyIduPL3nl7v3z/+nxlnpln//R389w7+8yTq3pij/64ejHp9dS85gfvqwH+eRD0bdfZfpAPx35/gvzrwnx9PvdziQaezdJ/Xm+VA/Pcn+K+O0vOOu/Nhai+cQk0vv/kp6kzJ03mVJ0qvd+e/jwNHx6ruJSfwXz0t+cWDHv67zsnbn0Xlo3dMnz9/8p/qO3O7ggPjwX9e/vvMSeRZ4qic3Hm55L/rGrCnBuprdoQzR7GwBvTznyul/fOT/0Y8vkvdosGB8eBA/Neal8//vXPft/N61oEu615X8F88rAVxYE9eSv77/tkWB+K+d/DfHHAg/mvNy5v7PpT+3oRr9natVRS4by44EAe2ZuW67y39/HUdiPPawX/zwYH4ryUrNe77i5p/s/H6M1n/DbMZ852tBtnBgfivNie111dy2fefX//30+85MmNtm+n6d4F1IP5ryUntz7/9G8Qr13wz9uC/bl5/9DVxnwYciP9qMhL5eqvd9/2/R6+l9F2Z0ddl/acB/+G/mnyoxxE15pHreXvd0XHjPw04EP89ZaMlQyXcxlz7M7XXwX3A3OA//FfKRe3P1eA03trxR75vDVH3R0v3X6E8h2qPZCXjPrE2E7U/14JyvLPGNOtMTKu77n4HF9bnQu2SrJzsv+/89BCd4ehrU7zeh1pvtf6cOluO4MBxB+7iwdZrGfGfyoHR9Zr5+iW/9azrSmeU8CIOjHCgeg6jctCaGScHKnvnrUa9rz/bWbjwz7lSuyQjO/mv1K9RvtvRgU/1iRjX6W5aPYdqn2Rjpz3wdw6u//9sIsbtVrvSn7XA+qxc5+gc4cB+B6ozEZmt2qw5OdB5DiLGpvRgaZ5Wre2fxhBdaxzY5z/n/uuZ/6fs4b/xmvYS/W/Tt85L7Xwps4EDNQ5U99msfnXw39PPZfj8UTpw5TrNgahrwoH17tstR6o14BP/96P839T1qq1p5FifHJi5TtHZHZ0vtV+c2TVXd+u/u2x8/+9Zzrsja92jXXR14Im+u6tx9HypPePIzhm7uu0tZyvd9/GfukYRfRVxHTjvPYejr6l2jRs1Nc2cx5rslNaEs92Xef3XU+fI39udp0yOzpHaOU68eWHG55Abs/z35r7dHFjTqzvnKLp+rf+t5jXVvnHirY6leu2W3Zq8zXLfrg4s1U89ngzU9GXtz3yj9o0bvf6r+d1stNwHiHbfLvcCoZ63DNX8/tPrXv9M7RpHRv23U7/2XkuE93DgeUTM87UH3+45qH3jRu3nTOvvZ9zztIw1ar2HA88ksi9qew0HzvHf3Vr7+3cy9fLM+3vcC4TvnKneV+0cJ0b99+3A0n3WDH28yms4EJTzyhqwzU0R9XLvYzfvsRfeG/V84r93P0V/Tqjn/CkLzu6rXQe6f8aAzzzhv7IDS3vYXR3o7r63NeC3vx16C97zpn5//KdzrDp/d3lQu613HVhauzrW+XRcPptwH/675kHttV4Plsbu0mvwO2MO88HaD//d5UHts1mOVNcXfudMPYbPONQOOBmXHHyysKv78J8XDnOB+2L89UQW/+3uPvznhcNc4L8Y9z3V982DDjn4jFXtJ/x3Dg5zgf/G/Tdaa4ccfMan9hP+OwOXecB/Y+5r9d9dvV2y8Bmj2lGz/edU71NxmQP8N+a/iHq7ZOEzPrWjWAPuj8sc4L9xB47ugZ3WJLv7z6XOp+MyD/hvrQMz3APc0YHfz6HUNc5MVB1d5gH/rXWgu/++M652VqTznOqblev965G6uswH/lvrwAznYL6zrnbYqPvUddyJlns3b5896rnhO29zHfjrUufac4DqXNxlRO0y3KfnKbtvGXfzH+5b58He31Xn/Tsrap+1uk9dsx0ZzfN1XlTzhPv8cevhLA50q9tOjDrjuifKeh0w331ufbzCf997J/znR4Q31M+icJ83ju775GbV2q33vRzrtgvRe0ZVzvGfF3f3jdVZL+Vm9rpv9P1ca7cDM+6Z4cCzydKvq93X+55Z6pmRWc5QOLDmHAbMd1+Wfp3hv7f1but7ZqllVnpcUesZ9bMQPIj/ajIye813fc/I14OYDLR672fF76nnDwfqHKjOdUtGZq73Splk7efDkyOe7mHXuEU9h/gP/73lY+Z6r/c91WuHk7h7Vle7lnfuBdyH/2oyssp7136LWE+CLjfu/YD/cGBNRlrvyUW/d4ZzQvD3eXPvBfyn9V+GXuZ5BLTmJctaAP/9OQf47+/5UK39IB8jPcR5aJ33FOciM7gC90FtTkZ7B//p/Le6HhnWfp964D94y0hE36zuCdyn9Z86t7UZKbkO/0H0ngkH7u+/TJ64u//36+bPs6xnIT4bM/pjVZbw3581x3/PWf/OJmdSzmZmr6zKFv5bS0ZXZBwzzGWX54T4b73/1NltzUe2McN8VvsPB+7B3Ty67iOdxgI+rD4nVuqbyOtRe+EUrvN4zZKLA13GAT4ozsiu6AnFNZ3M03lrF+84jAG8UDliRRbxnxdKD+I+uKL0A2dhzkThQJf1J/ig9gLnoc9l5XMR3AdXHO6NKdYA6r7vrZN6DDOvLcJPpd/HfXCHS0+tXgO6XHdrjdRjWHGNbzzNacvvwNk4eYA1YF2N1GNwAMdBBE79hP/qaqQegyv4D1px6qfVn+FO195SI/UYXGENCK249RP+y893jRX5wYNQi5sDeAaSn+8aK3OEA+ENNwdwDzA/3/VVjwUPwhtODqzJauQeZ8Z1u9RSzU+TOuA/qEHdty3u+/6diPOyUeN/+t4/eGcLzkbdr28ZLTllJNtRnrrzMA70Af/BG+pefcrok0t69sPRa7S37ySo+x/yO5Cz3vPr65rPt7G15CLaSW/viwM9cPZG6bssvwo/c/1vEDMHDhkdHdfb90AV/eRQW/B0xtO9k7c1n+P1ZMSlP0tZUI8ropdcr+MkHNeAo/ev1ePfAafevK7xncY20keO13EiTs4Y9bGjz7Pi1J/uZ0h6Mud8PSfh5IyoM6zq69gB+rOth3prrB47+Dgj4uyqy7XsAP1Z1zv4Lzcuzojwn/oadoI14NzeobY+OLgD//lBj773DQ7Mj9odEXtX9TXsCP1Z1zsje2BqrKd0nm7VPTWefXhCb/b3T0uNqbOeu+9XfP+3mS6M8h8OjJ2Tk/py5JxN1LM7dQ1O5nrWtCYnUX0W2bNqb+zAaf04+r24qPs36jqcTmsGSt9Na8lDtP9Kr9czthM51X2jHoraw6jrAe3zXpOrFf67OrDkPBx4X7MT+++aA9X67+fBc7Arb5mY6aC3TOK/s71Xyqji/h8O3BOl/2pypvaPg/vUGXEg4v7fjLlhfnLjvP5Sv78aeisu4zPPRaivD8ay4eof9ft/xqB4JkNfrck4c3U2b89jHfyjdt+qPiq9L8zLOP6DUj5O95/CgdxXmpfxFfmAnJTOoJzuv88YZvcS3puf7xXZgNy4nUF2GMddxp3OU+DOuhrhP1BmZdQPqnGV3BI1ngj30YuaTFPzvXBYb2VxYOR3CiLmijXg+kxT771wdN+dh5wcqOijp2dW6gy5wbNfqM2Ju/8+mVO+d3R/9azb3s5tqrPkxGz/Ue89yOC+Xf3XOk9v70lPrss1td6DTP5T7oHv6tY7nui1Hz0ZNzf47yyy+O/bG6vHHPUseOTMSq3/6Ms1+aDWe5DJf9f8rX6/nvpdz1bOnid6cl02qHV+svpvtQOf/FUaR1R/tKx56cn1uVBfL+TISmb/vWX9OpbPz0b0R8t1nt6PK++PsAfOT5bzL2r/1WQ9aq87Mken96PTZyLkAP/96TjHM8b4b6xOMz7nT6/1Ltzt3VTPWhX+K33HY9Z6Lmqe6Mn6LH/PKf6DUmauvX6K/55q45JzzkDX16j0uYX/4C03s/Iyw38R43NyXM080ZPjOcd9cJeLuz9Xe67GXS1kduBb/2a4BjX4D1ZmZYUDWz2Z1X+fOcl+Der64T+ozYrzs5CecV2vJ6M37q472zWo64f/oDUzTh4cHYvTs93R+ch6DcraReRPfR2QMztR/iO/oMow+TkXh7Ug/oOR/LbkpHS/VX0doEdxjxD3wWheW3LydK767rXV1wgaVniQM1wwmtGafH3no/ZZ05Mb4SyiPRjtVjJ6Hm9nh0qZuJ4VePIf+YIPUc6asaYkn+cxcm6y5mfIF9zR6q9V9xTJ6FnMPjNJtqBEzfcvVj9TJqNn8Wvy3JMteOPqOuU5GjJ6FrPPjJMt6AEHQikTb2dNWn028/ns3Z5GXUfIgcqB5NSPaxbu5mj2vbwe+GyFEZRrQDzoQc33LVy/j8H+AkZQ7oNZC+p5mv/v72LgP9gVpf9woO/cf/vP1TOu44I8qNeAZFY792+fS85z5jou6Edxb0ztQO4H6rKWec2O+/ah5hncyvdnLbg/I/5Tj/0vHJ0MfTjcY3Y4K02OtZnL6D8yk5une8zqeVU5UD0nJ9Azrw6ZvGZTPQ4Yn0NnF+C/Pen1n3rcsA9vGXTI20r/8ZkeP3elerbOK3MD0WTx3woH0l9z5qxU1x7/qa8L9iKD/2rGGeU/9XXuwN3n1dWBrZ9pfDZBNLUZdMgd/svD2/M03AerGTlb4pC9FXtgh+vMzKwzS8wLjDCaSZf84T8vVp3VZF5ghNFcunw/bPYaUH197qjOpjMv0Et0TpUuXLH+O7XXnq5bcQYdB8Ios/ckqzPJM5C5OYk4o7JL1iA/u90v4wzgvLq6+u/E+YBxdtwrrrzf9Lm20nPzt3G63DOtrevdWNX73gy1Az9WnRXZ1X/f13f3nk/XfnfuV52H2rzc+U/lviy1Ay92dd/39Sl78qkGT+d+1bnIVuusNQMtuz8jUO/JSg58WiuqM5GxzlnrBlp299/nGt0cuMvab/XZPteMQT5OOo/q0KNZapWxppnqBh6sfj5w0vX21sihTi31dKlpprqBntW5dehtl17doYed3JetdqBHkV2HjDr1rFttWmroVsdM9QMtyvyqc+rWt5+ajNRl5Rlr1/qpewrycPI5Bbf+HfHRm9Ou/31kDhzXfC6Zgjyoc6zOqnLdWyLiWr5fp+aMTcv7qjPjninIgzrH6qzutO+/+q/lLF6tA9V5yZApyIM6z+qs3q2/eq7hjdX+652L67hGa3NipiAP6ky7ZbWlz2v3rNfXm3X2J2ouMzrPOVPgizrfDucAW2rSc6/uzn87zqULbnkCXxx6xi2vpf1qr6u/11Ezfe8wl2ocP09BR+vejMzO2a9GPN9tHfeJOOUItPTcmyK3c/arKxzvMpfKDDnlCLS85cHp/rZTdkvn6GbORfS4T8MpP+BBjf/UuY32TFTdMvaU03ziPnDGqVfc8rviXt3uc7oyN9nmCbTM6pOeM2OO+XUck3Je3cB7MEp0r3znsfUMsboWO+B0LzfacXeo6w25ieyVu0zWvD5Z9pxPB8gFzCaiZ54cVnp9Psd959MFsgGz6d0z1e5Frq+P9zzn0w0yAqtovVfXeh8G562fT7W/cB9kovZenXqcEDefLvBsAxx46hlymYtM+2ByBQ68PatQjw/a59PdgWSrbS6p1fwa8/m8D+4OJFvt84cH59abfO5Fz3dyItd2T5+r5Ot93vjc0NWcOu/Dm49qvdWzr2Vf0TdXrJs1tafOe1P73bIeB5a+C8Teom1uuHegrT/7E2hx31tm7s7Bq6/PjdazuOrx7gr5hJZ1SE1efuG+kHq31h1gB1bkvfW+X8t4SuOnh2PutbJvgx25OmlWzmd5r/ba1HVWz3GP+yLnB4+CI7OfA7as+SL74up0dZ2V8xvtv9p8tJwHUNcJfJmZkbfeGH3f1Wu+u/c9tb9muu9pznruc6hrBb5k9V/N5/6sa8N/87z3NI+9zmUdCApKWY3I48zX/rz+nUOvPXhqX63w34r1JMAs7j6vI/00a69TGnPpetR1VqD2GQ6EDMx6LjfLQ637q1P7Se0yHFiX5VOu9TSuZ2oiXq/1/tLJ2VJ7bNSB6vrNJro/wIuR9WTEffXTc6V2GA58z/cJ1wp1WRh9hoj7/kTtrwj/7TqH3KOGTw6iz6jt3DctqP0VNZfqOq7I/a7XGVEn9RhWZQD3xaJ2Fw58zz+5Lddm95rM8p/6ulxQe4s5reuBE66zpy67++/7OqP6ZPd6taD2VqT/dp3X7/zveo0jdVGPY3UG6I841N6KdqC6njPzv/s1wnsGehxIZsqonYX/6rN/wnXCew6eOK0vRlE7C/+1Zf+E64Q++F5vO2pn4b+2fJ9wndAP5wXaUDsL/7Vnm1xDCe6TtKF2Fv5ryzZrQHiCz8g21M7Cf/35Vo8F/DjlTGQU/wWBgljMANwFAA==
+  </data>
+  </layer>
+  <layer name="Items" width="320" height="300">
+    <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3dwXLCIBQF0PgXtdXq/39l2dpFdagkD+45M9mHmCFweeC2AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKN9nLbt3K7P09F3ArCvr9bvXdp11f8BYb5bv3dr113/B7Ak83wglXk+kMo8HwCAPcgdgVRyRyCV3BEAWJmsC0gl6wLeZbbxlKwLeBfjKSCV8RQAwPvMlq0BvItsDUglWwMAAAAAAAAAAAAAoIf9iEAq+xGBVPYjAgDA32SmQCqZKavybecZmSm9qvcvvu3AKNX7F992YBT9CwAAAADAOqqv+QOMUn3NH2AUa/4AQAq5F5BK7gWkqpJ7JY9Dq7W92v3A6pLHodXaXu1+YHVVxqFHqNb2avcDAAAAAAAAAAAAAAAAAEA/Z4cAqZwdwqt8K1mNs0N4lW8lkMq3EoA0sg+gulH9lOwDqG5UPyX7AKrTTwEAkMD6DJDK+gyQSu4JAAAAAAAAAAAAAAAwnj28QCp7eIFU9vACAAC/yYmBVHJiIJWcGAAAAAAA+qXUWaS0E3hdSp1FSjuB16XUWaS0EwASpec86e2HZOk5T3r7IVl6zpPefsYwrwBSmVcAqcwrAAAAAAAAAAAAAACYnb2RQCp7I4FU9kYCAAAAAAAwSrVapGr3A6yrWi1StfsB1lWtFqna/QAAAAAA9LLeDaSy3g2PjAlyWO+GR8YEQCpjAgAAAAAAAID/U3sHpFJ7B6RSewcAAAAAAAAAAAAAAAAAAAAAAABzc6YskMqZskAqZ8oCAAAAAAAAK1D7BqRS+wakUvsGAAAAAAAANanlAlKp5QJSqeUCAACoS2YPpJLZA6lk9jAv8zcglfkbkMr8DQAAAAAAAAAAAAAAAAAAAABgbs4RBFI5RxBI5RxBAADgCLJoIJUsGkgliwYAAAAAAAAAAAAAAADI4DwBIJXzBIBUzhMAAAAAAAAAAADgGXsNgFT2GgCp7DUAAAAAAIB5qOtgT943KlHXwZ68b1SiroM9ed8AAAAAAJiVGgcglRoHIJUaBwBmJL8AUskvgFTyCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Egfp207t+vTfy0fzm9BL+9On6/2vC7tunpuh/Nb0Mu70+e7Pa9bu+6e2+H8FvTy7tRnjA6kMkYHUhmjAwAAAAAAAPzfDwjTd5oA3AUA
+  </data>
+  </layer>
+  <layer name="Units" width="320" height="300">
+    <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OUQ2AMBAFsP1hCDFoQAwGyELQgEFUkMdurYK2BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwjyMdAAAAAAAAoJwzHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICCejoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA7+zpAAAAAAAAAAAAAADQ1nQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAsq50AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrOlAwAAAAAAAAAAAAAAAAAAAAAAAAAAAMCU7nQAAAAAAAAAAADgA0s6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg3nSAQAAAAAAAAAAAAAAAABKeQHSjCaRANwFAA==
+  </data>
+  </layer>
+  <layer name="Set" visible="0" opacity="0.8" width="320" height="300">
+    <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4GcLd19gDcBQA=
+  </data>
+  </layer>
+  <objectgroup name="Triggers" visible="false" />
+</map>

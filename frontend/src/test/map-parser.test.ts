@@ -1,4 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
+
 import { 
   getFileName, 
   loadImage, 
@@ -7,6 +8,7 @@ import {
   getFrameSlices
 } from '../lib/game/map-parser2/tilesets-parser'
 import { MapParser } from  '../lib/game/map-parser2/map-parser'
+import { parseData } from  '../lib/game/map-parser2/layer-parser'
 
 describe("findFileName",() => {
   it("isolates the file name from path", () => {
@@ -101,7 +103,7 @@ describe("findUsedTilesets", () => {
   })
 })
 
-describe.only("getFrameSlices", () => {
+describe("getFrameSlices", () => {
   it("gets the frame slices of an image", () => {
     const expectedOutput = {
       0: {
@@ -151,3 +153,38 @@ describe.only("getFrameSlices", () => {
     expect(result).toStrictEqual(expectedOutput)
   })
 })
+
+describe.only('parseData', () => {
+  it('should correctly convert a flat array into 2D array', () => {
+    const data = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    const width = 3;
+
+    const expected = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8]
+    ];
+
+    const result = parseData(data, width);
+    expect(result).toEqual(expected);
+  });
+
+  it('should handle data length not divisible by width', () => {
+    const data = [0, 1, 2, 3, 4, 5, 6];
+    const width = 3;
+
+    const expected = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6]
+    ];
+
+    const result = parseData(data, width);
+    expect(result).toEqual(expected);
+  });
+
+  it('should return empty array when input is empty', () => {
+    const result = parseData([], 3);
+    expect(result).toEqual([]);
+  });
+});

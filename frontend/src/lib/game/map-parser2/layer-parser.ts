@@ -58,6 +58,19 @@ function parseLayerData(layerNode: Element): number[] {
   }
 }
 
+export function parseData(data: number[], width: number){
+  const rows = Math.ceil( data.length / width )
+  const tiles = Array.from({ length: rows }, () => [] );
+  
+  for(let i = 0; i < data.length; i++) {
+    const gid = data[i]
+    const col = i % width
+    const row = Math.floor(i / width)
+    tiles[row][col] = gid
+  }
+  
+  return tiles
+}
 
 export default function parseLayers(layersNodeArray: Element): layersInterface {
   const layers: layersInterface = []
@@ -72,8 +85,10 @@ export default function parseLayers(layersNodeArray: Element): layersInterface {
     if(name == "Units") { continue }
     const className = layerNode.getAttribute("class")
     
+
     const data = parseLayerData(layerNode)
-    
+    // retruns 2d of 2array of gids 
+    const tiles = parseData(data, width)
     const layer: layerInterface = {
       id,
       width,
@@ -83,6 +98,7 @@ export default function parseLayers(layersNodeArray: Element): layersInterface {
       name,
       className,
       data,
+      tiles,
     }
     
     layers.push(layer)

@@ -87,6 +87,21 @@ export default class MapRenderer {
     }
   }
   
+  renderMapRaw(map, tilesTexture) {
+    const ground = map.layers[0]
+    for(let row = 0; row < ground.tiles.length; row++) {
+      for(let col = 0; col < ground.tiles[row].length; col++) {
+        const gid = ground.tiles[row][col]
+        const texture = tilesTexture[gid]
+        const tileSprite = new Sprite(texture)
+        console.log(gid)
+        tileSprite.x = col * 20
+        tileSprite.y = row * 20
+        this.mapContainer.addChild(tileSprite)
+      }
+    }
+  }
+  
   generatechunks(map, tilesTexture, chunkSize = 16) {
     const ground = map.layers[0]
     const width = map.width
@@ -139,6 +154,7 @@ export default class MapRenderer {
     this.chunks = this.generatechunks(this.map, this.tilesTexture, 16)
     this.chunksRenderTexture = this.createChunkRenderTexture(this.chunks)
     this.renderMap(this.chunksRenderTexture)
+    //this.renderMapRaw(this.map, this.tilesTexture)
     //this.renderMapTest(this.map, this.tilesTexture)
   }
   

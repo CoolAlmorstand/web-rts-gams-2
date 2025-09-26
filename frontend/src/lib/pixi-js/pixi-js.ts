@@ -65,6 +65,19 @@ export class PixiEngine implements RendererInterface {
       y: this.app.screen.height / 2
     }
     
+    // Create a Text object
+    this.debugText = new Text("Hello World", {
+        fontFamily: "Arial",
+        fontSize: 36,
+        fill: "white",
+        align: "center"
+    });
+    
+    this.debugText.x = 100;
+    this.debugText.y = 50;
+
+    this.app.stage.addChild(this.debugText);
+    
     this.app.ticker.maxFPS = 60
     this.app.ticker.add((tick) => this.runTick(tick) )
   }
@@ -78,7 +91,9 @@ export class PixiEngine implements RendererInterface {
     container.appendChild( this.app.canvas )
   }
   
-  private runTick(tick: Ticker) {  }
+  private runTick(tick: Ticker) {  
+    this.debugText.text = `fps: ${ (1000 / tick.elapsedMS).toFixed(0)}`
+  }
   
 }
 

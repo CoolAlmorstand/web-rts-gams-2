@@ -7,7 +7,7 @@ export default class EventEmmiter implements EventEmmiterInterface {
   constructor() {
     
   }
-  
+  snbsb 
   on(eventname: string, callback: Function){
     if(this.events[eventname] ) {
       this.events[eventname].push(callback)
